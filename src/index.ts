@@ -1,4 +1,6 @@
-const add = (a: number, b: number): number => {
+type parameters = (a: number, b: number) => number;
+
+const add: parameters = (a, b): number => {
   return a + b;
 };
 
