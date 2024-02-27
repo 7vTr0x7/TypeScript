@@ -1,7 +1,14 @@
-type parameters = (a: number, b: number) => number;
+const numbers: number[] = [1, 2, 3, 4, 5];
 
-const add: parameters = (a, b): number => {
-  return a + b;
-};
+console.log(numbers);
 
-console.log(add(7, 7));
+const numbers2: Array<number> = [12, 3, 4, 5, 6, 7];
+const str: Array<string> = ["!", "s", "g"];
+
+const arr: Array<string | number | boolean> = ["s", 1, true];
+
+console.log(arr);
+
+// tuple / fixed size array
+
+const ex: [number, string, boolean] = [1, "s", true];
