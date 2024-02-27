@@ -1,3 +1,7 @@
 "use strict";
-const a = 8888;
-console.log(a);
+let str = "str";
+let newNum = 77;
+let boolValue = true;
+let ex;
+ex = 3;
+ex = "y";
