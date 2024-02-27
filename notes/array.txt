@@ -14,8 +14,6 @@
     const arr: Array<string | number | boolean> = ["s", 1, true];
 
     console.log(arr);
-
-
     
     // tuple / fixed size array
     const ex: [number, string, boolean] = [1, "s", true];
