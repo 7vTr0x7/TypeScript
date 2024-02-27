@@ -1,9 +1,21 @@
 "use strict";
-const numbers = [1, 2, 3, 4, 5];
-console.log(numbers);
-const numbers2 = [12, 3, 4, 5, 6, 7];
-const str = ["!", "s", "g"];
-const arr = ["s", 1, true];
-console.log(arr);
-// tuple / fixed size array
-const ex = [1, "s", true];
+const person1 = {
+    height: 172,
+    weight: 300,
+    adult: true,
+};
+const person2 = {
+    height: 170,
+    weight: 280,
+};
+const newPerson = {
+    height: 180,
+    weight: 290,
+    graduate: false,
+};
+const newPersonObj = {
+    add: (n, m) => {
+        console.log(n + m);
+    },
+};
+newPersonObj.add(10, 20);
