@@ -1,4 +1,9 @@
-//Rest Operator
+
+
+
+   # Rest operator
+
+     //Rest Operator
 
 const add = (...n: number[]): number[] => {
   return n;
