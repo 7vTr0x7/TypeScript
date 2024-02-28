@@ -1,4 +1,9 @@
-type AddType = (n: number, m: number) => number;
+
+
+   
+    # Function 
+
+    type AddType = (n: number, m: number) => number;
 
 const add: AddType = (n, m) => {
   return n + m;
