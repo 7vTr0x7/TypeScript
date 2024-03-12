@@ -1,3 +1,23 @@
-type Theme = "light" | "dark";
+interface Product {
+  name: string;
+  stock: number;
+  price: number;
+  url: string;
+  readonly id: string;
+}
 
-const theme: Theme = "dark";
+type GetDataType = (product: Product) => void;
+
+const getData: GetDataType = (product): void => {
+  console.log(product.name);
+};
+
+const productOne: Product = {
+  name: "apple",
+  stock: 1,
+  price: 399,
+  url: "apple.jpg",
+  id: "235",
+};
+
+getData(productOne);
