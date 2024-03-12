@@ -1,21 +1,13 @@
-interface Product {
-  name: string;
-  stock: number;
-  price: number;
-  url: string;
-}
+const err = new Error(); // type Error
 
-type GetDataType = (product: Product) => void;
-
-const getData: GetDataType = (product): void => {
-  console.log(product.name);
+const errorHandler = (): Error => {
+  // returns error
+  return new Error();
 };
 
-const productOne: Product = {
-  name: "apple",
-  stock: 1,
-  price: 399,
-  url: "apple.jpg",
-};
+// throwing error returns type never
 
-getData(productOne);
+const errorHandler2 = (): never => {
+  // returns error
+  throw new Error();
+};

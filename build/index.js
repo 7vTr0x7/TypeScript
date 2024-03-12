@@ -1,11 +1,11 @@
 "use strict";
-const getData = (product) => {
-    console.log(product.name);
+const err = new Error(); // type Error
+const errorHandler = () => {
+    // returns error
+    return new Error();
 };
-const productOne = {
-    name: "apple",
-    stock: 1,
-    price: 399,
-    url: "apple.jpg",
+// throwing error returns type never
+const errorHandler2 = () => {
+    // returns error
+    throw new Error();
 };
-getData(productOne);
