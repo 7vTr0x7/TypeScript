@@ -1,7 +1,13 @@
-// Access Modifiers
-// - public : can be used any where
-// - private : only be used inside its own class
-// - protected : only be used inside its derived class
+
+
+  
+
+    # Classes
+
+    // Access Modifiers
+// - public: can be used anywhere
+// - private: only be used inside its class
+// - protected: only be used inside its derived class
 
 class Player {
   public readonly id: string; // access modifier
