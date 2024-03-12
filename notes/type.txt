@@ -16,3 +16,10 @@
         };
 
         console.log(add(7, 7));
+
+
+        // Theme 
+
+        type Theme = "light" | "dark";
+
+        const theme: Theme = "dark";

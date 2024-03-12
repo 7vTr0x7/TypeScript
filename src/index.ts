@@ -1,13 +1,3 @@
-const err = new Error(); // type Error
+type Theme = "light" | "dark";
 
-const errorHandler = (): Error => {
-  // returns error
-  return new Error();
-};
-
-// throwing error returns type never
-
-const errorHandler2 = (): never => {
-  // returns error
-  throw new Error();
-};
+const theme: Theme = "dark";
