@@ -1,4 +1,9 @@
-interface Product {
+
+ 
+  # classes with interface
+
+
+  interface Product {
   name: string;
   stock: number;
   price: number;
