@@ -1,3 +1,5 @@
-type MyUnion = string | number | boolean | null | undefined;
+const func = (a: number, b: number) => {
+  console.log(a + b);
+};
 
-type value = NonNullable<MyUnion>;
+type para = Parameters<typeof func>;

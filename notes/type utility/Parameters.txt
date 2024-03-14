@@ -1,0 +1,13 @@
+
+
+
+   # Parameters<type>
+
+     - returns array of Parameters of given function 
+
+
+     const func = (a: number, b: number) => {
+        console.log(a + b);
+        };
+
+        type para = Parameters<typeof func>;
