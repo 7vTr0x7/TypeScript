@@ -1,4 +1,10 @@
-type User = {
+
+
+
+   # Readonly<type>
+
+
+   type User = {
   name: string;
   email: string;
 };
