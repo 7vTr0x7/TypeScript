@@ -1,0 +1,15 @@
+
+
+  
+   # Omit<type,keys>
+
+     - opposite of pick it ignores the properties
+
+
+     interface ShippingInfo {
+  city: string;
+  state: string;
+  country: string;
+}
+
+type random = Omit<ShippingInfo, "country">;

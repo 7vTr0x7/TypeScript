@@ -1,9 +1,7 @@
-interface OrderInfo {
-  readonly id: string;
-  user: string;
+interface ShippingInfo {
   city: string;
   state: string;
   country: string;
 }
 
-type ShippingInfo = Pick<OrderInfo, "city" | "state" | "country">;
+type random = Omit<ShippingInfo, "country">;
