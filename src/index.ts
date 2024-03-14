@@ -1,3 +1,3 @@
-type MyUnion = string | number | boolean;
+type MyUnion = string | number | boolean | null | undefined;
 
-type value = Extract<MyUnion, boolean | number>;
+type value = NonNullable<MyUnion>;
