@@ -1,4 +1,10 @@
-interface Person {
+
+
+
+     # keyof and index signature
+
+
+     interface Person {
   // [key: string]: string; // dynamic key - // index signature
   name: string;
   email: string;
@@ -15,7 +21,7 @@ let key = "name";
 
 //newPerson[key as keyof Person];
 
-// if we don't have access to interface
+//If we don't have access to the interface
 
 newPerson[key as keyof typeof newPerson];
 
