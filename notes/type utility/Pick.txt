@@ -1,4 +1,11 @@
-interface OrderInfo {
+
+
+
+   # Pick<type,keys>
+     -> picks out needed properties
+
+
+     interface OrderInfo {
   readonly id: string;
   user: string;
   city: string;
