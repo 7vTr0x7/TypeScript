@@ -1,80 +1,39 @@
-// Generics
-
-const func = <T>(val: T): T => {
-  let newVal: T;
-
-  return val;
-};
-
-// T works as an place holder which will be replaced by the given argument
-// It can be any Alphabet ex. T , A or CustomType
-// mostly used is T
-
-const ans = func(20);
-const ans2 = func("20");
-const ans3 = func(true);
-
-// In Case of Custom Data Types
-
-type Person = {
+type People = {
   name: string;
   age: number;
 };
 
-const newPerson: Person = {
-  name: "vTrox",
-  age: 22,
+const peoples: People[] = [
+  {
+    name: "v",
+    age: 7,
+  },
+  {
+    name: "vt",
+    age: 7,
+  },
+  {
+    name: "vtr",
+    age: 74,
+  },
+  {
+    name: "vtro",
+    age: 17,
+  },
+  {
+    name: "vTrox",
+    age: 22,
+  },
+];
+
+const getFilteredPeoples = <T, U extends keyof T>(
+  person: T[],
+  property: U,
+  value: T[U]
+) => {
+  return person.filter((items) => items[property] === value);
 };
 
-const getData = <T>(val: T): T => {
-  return val;
-};
-
-const data = getData<Person>(newPerson);
-//                     |
-// this value will fill/replace the T
-
-// multiple parameters
-
-const func1 = <T, U>(n: T, m: U) => {
-  return { a: n, b: m };
-};
-// OR
-const func2 = <T, U>(n: T, m: U): { a: T; b: U } => {
-  return { a: n, b: m };
-};
-
-const ex = func1<number, string>(20, "a");
-
-// extend keyword
-
-type Player1 = {
-  name: string;
-  age: number;
-};
-
-type Player2 = {
-  name: string;
-  age: number;
-  city: string;
-};
-
-const newPlayer: Player1 = {
-  name: "v",
-  age: 21,
-};
-
-const newPlayer2: Player2 = {
-  name: "y",
-  age: 22,
-  city: "z",
-};
-
-const getPlayerData = <T, U extends T>(
-  player1: T,
-  player2: U
-): { player1: T; player2: U } => {
-  return { player1: player1, player2: player2 };
-};
-
-const playerData = getPlayerData<Player1, Player2>(newPlayer, newPlayer2);
+const filteredPeoplesName = getFilteredPeoples(peoples, "name", "v");
+const filteredPeoplesAge = getFilteredPeoples(peoples, "age", 7);
+console.log(filteredPeoplesAge);
