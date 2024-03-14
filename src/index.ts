@@ -1,5 +1,5 @@
-const func = (a: number, b: number) => {
-  console.log(a + b);
-};
+class Ex {
+  constructor(public name: string, public email: string) {}
+}
 
-type para = Parameters<typeof func>;
+type para = ConstructorParameters<typeof Ex>;

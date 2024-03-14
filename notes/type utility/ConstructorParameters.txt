@@ -1,0 +1,13 @@
+
+
+
+   # ConstructorParameters<type>
+     - returns array of ConstructorParameters  of given class
+
+
+     class Ex {
+  constructor(public name: string, public email: string) {}
+}
+
+type para = ConstructorParameters<typeof Ex>;
+ 

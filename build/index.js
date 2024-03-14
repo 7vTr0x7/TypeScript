@@ -1,4 +1,7 @@
 "use strict";
-const func = (a, b) => {
-    console.log(a + b);
-};
+class Ex {
+    constructor(name, email) {
+        this.name = name;
+        this.email = email;
+    }
+}
