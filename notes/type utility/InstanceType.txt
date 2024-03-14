@@ -1,4 +1,10 @@
-class Ex {
+
+
+
+   # InstanceType<type>
+
+
+   class Ex {
   constructor(public a: number, public b: number) {}
 }
 
