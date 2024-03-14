@@ -3,6 +3,8 @@
 
    # Readonly<type>
 
+     -> converts properties to Readonly
+
 
    type User = {
   name: string;
