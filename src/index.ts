@@ -1,7 +1,3 @@
-interface ShippingInfo {
-  city: string;
-  state: string;
-  country: string;
-}
+type MyUnion = string | number | boolean;
 
-type random = Omit<ShippingInfo, "country">;
+type value = Exclude<MyUnion, boolean>;

@@ -1,0 +1,10 @@
+
+
+
+   # Exclude<type,union>
+     - ignores the given types/unions 
+
+
+     type MyUnion = string | number | boolean;
+
+     type value = Exclude<MyUnion, boolean>;
