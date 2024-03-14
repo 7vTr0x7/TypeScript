@@ -1,5 +1,5 @@
-class Ex {
-  constructor(public name: string, public email: string) {}
-}
+const func = (a: number, b: number): number => {
+  return a + b;
+};
 
-type para = ConstructorParameters<typeof Ex>;
+type value = ReturnType<typeof func>;
