@@ -45,3 +45,36 @@ const func2 = <T, U>(n: T, m: U): { a: T; b: U } => {
 };
 
 const ex = func1<number, string>(20, "a");
+
+// extend keyword
+
+type Player1 = {
+  name: string;
+  age: number;
+};
+
+type Player2 = {
+  name: string;
+  age: number;
+  city: string;
+};
+
+const newPlayer: Player1 = {
+  name: "v",
+  age: 21,
+};
+
+const newPlayer2: Player2 = {
+  name: "y",
+  age: 22,
+  city: "z",
+};
+
+const getPlayerData = <T, U extends T>(
+  player1: T,
+  player2: U
+): { player1: T; player2: U } => {
+  return { player1: player1, player2: player2 };
+};
+
+const playerData = getPlayerData<Player1, Player2>(newPlayer, newPlayer2);

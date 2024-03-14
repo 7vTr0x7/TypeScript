@@ -29,3 +29,16 @@ const func2 = (n, m) => {
     return { a: n, b: m };
 };
 const ex = func1(20, "a");
+const newPlayer = {
+    name: "v",
+    age: 21,
+};
+const newPlayer2 = {
+    name: "y",
+    age: 22,
+    city: "z",
+};
+const getPlayerData = (player1, player2) => {
+    return { player1: player1, player2: player2 };
+};
+const playerData = getPlayerData(newPlayer, newPlayer2);
