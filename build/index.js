@@ -19,4 +19,4 @@ const getData = (val) => {
 };
 const data = getData(newPerson);
 //                     |
-// this value will fill the T
+// this value will fill/replace the T

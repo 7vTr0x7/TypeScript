@@ -32,4 +32,4 @@ const getData = <T>(val: T): T => {
 
 const data = getData<Person>(newPerson);
 //                     |
-// this value will fill the T
+// this value will fill/replace the T
