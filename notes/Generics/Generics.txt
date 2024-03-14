@@ -1,4 +1,10 @@
-// Generics
+
+
+
+   # Generics
+
+
+   // Generics
 
 const func = <T>(val: T): T => {
   let newVal: T;
@@ -13,3 +19,5 @@ const func = <T>(val: T): T => {
 const ans = func(20);
 const ans2 = func("20");
 const ans3 = func(true);
+
+
