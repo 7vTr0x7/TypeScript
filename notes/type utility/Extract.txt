@@ -1,0 +1,10 @@
+
+
+
+   # Extract<type,union>
+     - returns only the given types/unions 
+
+
+     type MyUnion = string | number | boolean;
+
+     type value = Extract<MyUnion, boolean | number>;

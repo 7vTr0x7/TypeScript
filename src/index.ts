@@ -1,3 +1,3 @@
 type MyUnion = string | number | boolean;
 
-type value = Exclude<MyUnion, boolean>;
+type value = Extract<MyUnion, boolean | number>;
