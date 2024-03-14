@@ -10,3 +10,13 @@ const func = (val) => {
 const ans = func(20);
 const ans2 = func("20");
 const ans3 = func(true);
+const newPerson = {
+    name: "vTrox",
+    age: 22,
+};
+const getData = (val) => {
+    return val;
+};
+const data = getData(newPerson);
+//                     |
+// this value will fill the T
