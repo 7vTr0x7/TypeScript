@@ -33,3 +33,15 @@ const getData = <T>(val: T): T => {
 const data = getData<Person>(newPerson);
 //                     |
 // this value will fill/replace the T
+
+// multiple parameters
+
+const func1 = <T, U>(n: T, m: U) => {
+  return { a: n, b: m };
+};
+// OR
+const func2 = <T, U>(n: T, m: U): { a: T; b: U } => {
+  return { a: n, b: m };
+};
+
+const ex = func1<number, string>(20, "a");

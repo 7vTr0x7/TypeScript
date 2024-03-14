@@ -20,3 +20,12 @@ const getData = (val) => {
 const data = getData(newPerson);
 //                     |
 // this value will fill/replace the T
+// multiple parameters
+const func1 = (n, m) => {
+    return { a: n, b: m };
+};
+// OR
+const func2 = (n, m) => {
+    return { a: n, b: m };
+};
+const ex = func1(20, "a");
