@@ -1,0 +1,10 @@
+class Ex {
+  constructor(public a: number, public b: number) {}
+}
+
+type ex = InstanceType<typeof Ex>;
+
+const obj: ex = {
+  a: 1,
+  b: 2,
+};
