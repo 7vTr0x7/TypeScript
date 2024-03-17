@@ -1,0 +1,21 @@
+type Users = {
+  name: string;
+  email: string;
+};
+
+type User1 = Record<"name" | "email" | "gender", string>;
+
+// example
+
+interface UserInfo {
+  age: number;
+}
+
+type exUser = "vtrox" | "sam" | "omen" | "yoru";
+
+const exUser1: Record<exUser, UserInfo> = {
+  vtrox: { age: 20 },
+  sam: { age: 20 },
+  omen: { age: 20 },
+  yoru: { age: 20 },
+};
